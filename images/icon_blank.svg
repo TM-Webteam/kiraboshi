@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.722" height="18.636" viewBox="0 0 18.722 18.636">
+  <g id="グループ_6" data-name="グループ 6" transform="translate(-1301.86 -448.348)">
+    <g id="グループ_1" data-name="グループ 1" transform="translate(1313.8 460.304) rotate(-135)">
+      <path id="線_1" data-name="線 1" d="M.5,8.449h-1V-.5h1Z" transform="translate(3.659 0)" fill="#fff"/>
+      <path id="線_2" data-name="線 2" d="M3.659,4.366-.707,0,0-.707,4.366,3.659Z" transform="translate(7.318 4.518) rotate(90)" fill="#fff"/>
+      <path id="線_3" data-name="線 3" d="M0,4.366l-.707-.707L3.659-.707,4.366,0Z" transform="translate(3.659 4.518) rotate(90)" fill="#fff"/>
+    </g>
+    <path id="パス_1" data-name="パス 1" d="M1315.7,465.324h-10.621V454.95h5.2v1h-4.2v8.374h8.621v-4.062h1Z" transform="translate(-0.56 -0.995)" fill="#fff"/>
+    <path id="パス_3" data-name="パス 3" d="M1315.2,465.324h-10.121V455.45h1v8.874h9.121Z" transform="translate(-3.218 1.66)" fill="#fff"/>
+  </g>
+</svg>
