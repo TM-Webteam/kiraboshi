@@ -71,7 +71,7 @@
 			wp_reset_postdata();
 			?>
 		</div>
-		<p class="btn__type01 mb0">
+		<p class="btn__type01--white mb0">
 			<a href="<?php echo esc_url(home_url('/')); ?>column/"><span class="text">記事コンテンツ一覧を見る</span><span class="effect"></span></a>
 		</p>
 	</div>

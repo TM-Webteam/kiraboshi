@@ -132,7 +132,7 @@
 									<li><a href="<?php echo esc_url(home_url('/')); ?>process/vehicle_transportation_management/">工程内の車両との連携・輸送資材管理</a></li>
 								</ul>
 							</li>
-              <li class="parent"><a href="#" class="disabled">ソリューション</a>
+              <li class="parent"><a href="javascript:void(0)" class="disabled">ソリューション</a>
 								<ul class="child">
                   <li><a href="<?php echo esc_url(home_url('/')); ?>mold_management/">金型管理ソリューション</a></li>
                   <li><a href="<?php echo esc_url(home_url('/')); ?>rfid_solution/">RFIDソリューション</a></li>
@@ -190,9 +190,9 @@
 							</div>
 						</li>
             <li class="parent">
-							<a href="#" class="disabled">ソリューション</a>
+							<a href="javascript:void(0)">ソリューション</a>
 							<div class="menu__full child">
-								<div class="mega__parent"><a href="#" class="disabled">ソリューション</a></div>
+								<div class="mega__parent"><a href="javascript:void(0)" class="disabled">ソリューション</a></div>
 								<div class="mega__child">
 									<div class="megaBox">
 										<div class="megaBox__ttl"><a href="<?php echo esc_url(home_url('/')); ?>mold_management/">金型管理ソリューション</a></div>

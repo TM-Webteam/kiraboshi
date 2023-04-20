@@ -226,7 +226,7 @@ get_header();
 
 			</div>
 
-			<p class="btn__type01">
+			<p class="btn__type01--white">
 				<a href="<?php echo esc_url(home_url('/')); ?>column/"><span class="text">記事コンテンツ一覧を見る</span><span class="effect"></span></a>
 			</p>
 		</div>
@@ -243,7 +243,7 @@ get_header();
 			</div>
 			<div class="wrap" data-style="linkbox" ] data-aos="fade-up" data-aos-delay="400">
 				<p class="text">SCM分野で培った豊富なノウハウを基に、<br>業務効率化・コスト低減など現場改善のパートナーとしてサポートいたします。</p>
-				<p class="btn__type01 home__strength-btn">
+				<p class="btn__type01--white home__strength-btn">
 					<a href="<?php echo esc_url(home_url('/')); ?>column/"><span class="text">記事コンテンツ一覧を見る</span><span class="effect"></span></a>
 				</p>
 			</div>
@@ -260,7 +260,7 @@ get_header();
 			</div>
 			<div class="wrap" data-style="linkbox" ] data-aos="fade-up" data-aos-delay="400">
 				<p class="text">かんばん方式を熟知したプロフェッショナルが、<br>自動車業界の企業様の現場改善を支援いたします。</p>
-				<p class="btn__type01 home__strength-btn">
+				<p class="btn__type01--white home__strength-btn">
 					<a href="<?php echo esc_url(home_url('/')); ?>case/"><span class="text">実績・事例はこちら</span><span class="effect"></span></a>
 				</p>
 			</div>
@@ -299,7 +299,7 @@ get_header();
 					?>
 				</ul>
 			</div>
-			<p class="btn__type01 btn__type01--right">
+			<p class="btn__type01--white btn__type01--right">
 				<a href="<?php echo esc_url(home_url('/')); ?>news/"><span class="text">ニュース・新着情報一覧を見る</span><span class="effect"></span></a>
 			</p>
 		</div>

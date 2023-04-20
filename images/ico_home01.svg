@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="29.633" height="26.354" viewBox="0 0 29.633 26.354"><path d="M25.072,38.578V31.7h-4.01V34.57l-3.183-3.179-3.057-3.068L0,43.133l2.2,2.194L14.822,32.711,27.438,45.327l2.2-2.194Z" transform="translate(0 -28.323)" fill="#ffffff"/><path d="M78.8,145.211v9.93h7.824V148.46h4.862v6.682h7.824V145.21l-10.25-10.251Z" transform="translate(-74.241 -128.787)" fill="#ffffff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="13.376" height="12.429" viewBox="0 0 13.376 12.429">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e60011;
+      }
+    </style>
+  </defs>
+  <g id="ホームのフリーアイコン素材" transform="translate(0 -18.138)">
+    <path id="パス_4" data-name="パス 4" class="cls-1" d="M87.15,157.507v5.238H83.862v-3.273H81.129v3.273H77.841v-5.238l4.655-3.645Z" transform="translate(-75.807 -132.178)"/>
+    <path id="パス_5" data-name="パス 5" class="cls-1" d="M0,44.253,6.688,38.93l6.688,5.323L12.6,45.379l-5.91-4.7-5.91,4.7Z" transform="translate(0 -20.249)"/>
+    <path id="パス_6" data-name="パス 6" class="cls-1" d="M378.226,18.138v3.407l-1.653-1.317v-2.09Z" transform="translate(-366.735 0)"/>
+  </g>
+</svg>

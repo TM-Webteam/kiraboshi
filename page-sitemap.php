@@ -50,7 +50,7 @@ get_template_part('template-parts/part', 'page-headding');
 				<ul>
           <li><a href="<?php echo esc_url(home_url('/')); ?>rfid_solution/">RFIDソリューション</a></li>
           <li><a href="<?php echo esc_url(home_url('/')); ?>mold_management/">金型管理ソリューション</a></li>
-          <li><a href="<?php echo esc_url(home_url('/')); ?>paper_media_solution/">ペーパーメディアソリューション</a></li>
+          <li><a href="<?php echo esc_url(home_url('/')); ?>paper_media_solution/">ペーパーメディア<br>ソリューション</a></li>
 				</ul>
 			</div>
 			<div class="col">
