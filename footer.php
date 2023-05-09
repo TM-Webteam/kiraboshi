@@ -37,6 +37,11 @@
   <?php endif; ?>
   <nav class="nav__f-nav">
     <div class="back-to-top"></div>
+    <div class="f-logo">
+      <a href="https://k-cr.jp/" rel="home" target="_blank">
+				<img loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/img_logo02.svg" alt="小林クリエイト株式会社">
+			</a>
+    </div>
     <div class="inner">
       <div class="col">
         <h2>コンテンツ</h2>

@@ -38,28 +38,63 @@ get_template_part('template-parts/part', 'page-headding');
 
 <div class="page__content has-sidebar">
   <main id="primary" class="site-main">
-    <div class="blog-container">
-      <?php
-      $queried_object = get_queried_object();
-      $term_id = esc_html($queried_object->term_id);
-      $term = wp_get_object_terms($post->ID, 'column_category');
 
+
+    <?php
+    $queried_object = get_queried_object();
+    $term_id = esc_html($queried_object->term_id);
+    $term = wp_get_object_terms($post->ID, 'column_category');
+
+    $args = array(
+      'posts_per_page'   => 1, //5件表示する
+      'post_type'    => 'useful',  //投稿タイプ
+      'post_status' => 'publish',
+      'orderby' => 'rand',
+      'meta_key' => 'wp_cta', //カスタムフィールドのキー
+      'meta_value' => $term_id, //カスタムフィールドの値
+      'meta_compare' => 'LIKE' //'meta_value'のテスト演算子
+    );
+
+    $the_query = new WP_Query($args);
+    // print_r($args);
+    // print_r($num);
+    if ($the_query->have_posts()) :
+      while ($the_query->have_posts()) : $the_query->the_post();
+    ?>
+        <div class="blog__wp mb40 <?php echo $bnr_class; ?>">
+          <a href="<?php echo get_permalink(); ?>">
+            <div class="image">
+              <img loading="lazy" src="<?php echo esc_url(CFS()->get('material_image')); ?>" alt="" width="164" height="116">
+            </div>
+            <div class="summary">
+              <h3 class="title">お役立ち資料</h3>
+              <div class="text fs-20rem"><?php echo get_the_title(); ?></div>
+            </div>
+          </a>
+        </div>
+    <?php
+      endwhile;
+    endif;
+    ?>
+    <div class="blog-container">
+
+      <?php
       $paged = get_query_var('paged') ? get_query_var('paged') : 1;
       // $args = array(
-      //   // 'orderby' => 'post_date',
-      //   // 'order' => 'DESC',
-      //   'post_status' => 'publish',
-      //   'paged' => $paged,
-      //   'post_type' => 'column',
-      //   'term' => $term[0]->slug,
-      //   'posts_per_page' => -1,
-      //   'order' => 'DESC',
-      //   'meta_key' => 'blog_date',
-      //   'orderby' => 'meta_value'
+      // // 'orderby' => 'post_date',
+      // // 'order' => 'DESC',
+      // 'post_status' => 'publish',
+      // 'paged' => $paged,
+      // 'post_type' => 'column',
+      // 'term' => $term[0]->slug,
+      // 'posts_per_page' => -1,
+      // 'order' => 'DESC',
+      // 'meta_key' => 'blog_date',
+      // 'orderby' => 'meta_value'
       // );
       $args = array(
-        'posts_per_page'   => 10, //5件表示する
-        'post_type'    => 'column',  //投稿タイプ
+        'posts_per_page' => 10, //5件表示する
+        'post_type' => 'column', //投稿タイプ
         'taxonomy' => 'column_category',
         // 'term' => $term[0]->slug,
         'term' => $category_slug,

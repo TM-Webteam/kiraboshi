@@ -59,10 +59,10 @@
 
 		<header id="masthead" class="site-header<?php echo esc_attr($lower_class); ?>">
 			<div class="site-header__upper">
-				<div class="site-title flex">
-					<a href="https://k-cr.jp/" rel="home" target="_blank">
+				<div class="site-title">
+					<!-- <a href="https://k-cr.jp/" rel="home" target="_blank">
 						<img loading="lazy" class="site-title__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/img_logo01.svg" alt="小林クリエイト株式会社">
-					</a>
+					</a> -->
 					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 						<img loading="lazy" class="site-title__logo icon-size" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/factoridge_header.png" alt="Factoridge">
 						<!-- 						<?php if (is_front_page() && is_home()) : ?>

@@ -1303,6 +1303,10 @@ a.recommend__link {
   background-size: 250px 250px;
 }
 
+.nav__f-nav .inner {
+  padding-top: 20px;
+}
+
 .nav__f-nav .inner>* {
   max-width: 15%;
 }
@@ -1648,4 +1652,27 @@ li.ancBox__list a:hover::before {
 
 .site-footer__contact .wrap h3 {
   color: #000;
+}
+
+.site-header__upper .site-title>a {
+  margin-left: 20px;
+}
+
+.f-logo {
+  max-width: 1024px;
+  padding: 51px 0 14px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .f-logo {
+    padding-top: 25px;
+  }
+  .f-logo img {
+    width: 120px;
+  }
+}
+
+.f-logo > a[target=_blank]:after {
+  content: none;
 }
