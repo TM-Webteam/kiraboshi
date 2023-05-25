@@ -76,7 +76,13 @@
 }
 
 .site-header .icon-size {
-  height: 35px;
+  height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .site-header .icon-size {
+    height: 35px;
+  }
 }
 
 .g-nav-pc {
@@ -1303,6 +1309,10 @@ a.recommend__link {
   background-size: 250px 250px;
 }
 
+.nav__f-nav {
+  background: #000;
+}
+
 .nav__f-nav .inner {
   padding-top: 20px;
 }
@@ -1662,6 +1672,10 @@ li.ancBox__list a:hover::before {
   max-width: 1024px;
   padding: 51px 0 14px;
   margin: 0 auto;
+}
+
+.f-logo img {
+  width: 200px;
 }
 
 @media screen and (max-width: 768px) {
