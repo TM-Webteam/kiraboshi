@@ -71,14 +71,14 @@ if ($categories) :
 
 <div class="page__content">
 	<main id="primary" class="site-main">
-		<div class="wp-container">
+		<div class="wp-container flex">
 
 			<?php
 			$taxonomy_slug = 'wp_category';
 
 			$paged     = get_query_var('paged') ? get_query_var('paged') : 1;
 			$args      = array(
-				'posts_per_page' => 10,
+				'posts_per_page' => 15,
 				'post_type'      => 'useful',
 				'paged'          => $paged,
 				$taxonomy_slug   => $term,
@@ -91,18 +91,23 @@ if ($categories) :
 					get_template_part('template-parts/content', 'whitepaper');
 
 				endwhile;
-			endif;
-			$GLOBALS['wp_query']->max_num_pages = $the_query->max_num_pages;
-			the_posts_pagination(
-				array(
-					'mid_size'  => 2,
-					'prev_text' => '<span>前へ</span>',
-					'next_text' => '<span>次へ</span>',
-				)
-			);
+			endif;?>
 
-			wp_reset_postdata();
-			?>
+    </div>
+
+    <?php
+    $GLOBALS['wp_query']->max_num_pages = $the_query->max_num_pages;
+    the_posts_pagination(
+      array(
+        'mid_size'  => 2,
+        'prev_text' => '<span>前へ</span>',
+        'next_text' => '<span>次へ</span>',
+      )
+    );
+
+    wp_reset_postdata();
+    ?>
+
 	</main><!-- #main -->
 </div><!-- .page__content -->
 <?php get_footer(); ?>

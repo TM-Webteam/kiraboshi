@@ -1690,3 +1690,132 @@ li.ancBox__list a:hover::before {
 .f-logo > a[target=_blank]:after {
   content: none;
 }
+
+.wp-container.flex {
+  gap: 30px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.wp-container.flex::after {
+  content:"";
+  display: block;
+  width: calc(100% / 3 - 20px);
+}
+
+@media screen and (max-width: 768px) {
+  .wp-container.flex {
+    gap: 15px;
+  }
+}
+
+a.wp-card {
+  color: #000;
+  text-decoration: none;
+}
+
+.wp-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 3px solid #ccc;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  width: calc(100% / 3 - 20px);
+  background: #fff;
+  padding-bottom: 15px;
+  line-height: 1.5;
+  transition: all .3s;
+}
+
+@media screen and (max-width: 768px) {
+  .wp-card {
+    width: 100%;
+  }
+}
+
+.wp-card__img {
+  border-top: 10px solid #620007;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 15px;
+}
+
+.wp-card__img img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  transition: all .3s;
+}
+
+.wp-card__ttl {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.wp-card__txt {
+  font-size: 14px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+.wp-card__btn {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 30px;
+  width: 85%;
+  margin: auto auto 0;
+  transition: all .3s;
+}
+
+.wp-card__btn span {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.wp-card__btn span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+}
+
+.wp-card__btn span.blank::before {
+  background: url("../images/blank.png") 50% / contain no-repeat;
+  width: 18px;
+  height: 18px;
+}
+
+.wp-card__btn span.dl::before {
+  background: url("../images/dl.png") 50% / contain no-repeat;
+}
+
+.wp-card:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.wp-card:hover .wp-card__img img {
+  transform: scale(1.1,1.1);
+}
+
+.wp-card:hover .wp-card__btn {
+  color: #fff;
+  background: #E60011;
+  border: 3px solid #E60011;
+}
+
+.wp-card:hover .wp-card__btn span.blank::before {
+  background: url("../images/blank-h.png") 50% / contain no-repeat;
+}
+
+.wp-card:hover .wp-card__btn span.dl::before {
+  background: url("../images/dl-h.png") 50% / contain no-repeat;
+}

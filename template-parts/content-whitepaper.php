@@ -10,7 +10,7 @@
 $pdf_url = CFS()->get('url');
 ?>
 
-<article class="wp-item">
+<!-- <article class="wp-item">
 
   <div class="image">
     <?php if (!empty($pdf_url)) : ?>
@@ -40,4 +40,25 @@ $pdf_url = CFS()->get('url');
       <?php endif; ?>
     </div>
   </div>
-</article>
+</article> -->
+
+
+<?php if (!empty($pdf_url)) : ?>
+
+  <a href="<?php echo $pdf_url; ?>" onclick="lfTrackPageview("<?php echo $pdf_url; ?>","<?php echo strip_tags(get_the_title()); ?>");" target="_blank" class="wp-card">
+    <div class="wp-card__img"><img src="<?php echo esc_url(CFS()->get('material_image')); ?>" alt=""></div>
+    <h2 class="wp-card__ttl"><?php the_title(); ?></h2>
+    <div class="wp-card__txt"><?php echo esc_html(wp_strip_all_tags(CFS()->get('copy'))); ?></div>
+    <div class="wp-card__btn"><span class="blank">閲覧する（登録不要）</span></div>
+  </a>
+
+<?php else : ?>
+
+  <a href="<?php the_permalink(); ?>" class="wp-card">
+    <div class="wp-card__img"><img src="<?php echo esc_url(CFS()->get('material_image')); ?>" alt=""></div>
+    <h2 class="wp-card__ttl"><?php the_title(); ?></h2>
+    <div class="wp-card__txt"><?php echo esc_html(wp_strip_all_tags(CFS()->get('copy'))); ?></div>
+    <div class="wp-card__btn"><span class="dl">ダウンロード</span></div>
+  </a>
+
+<?php endif; ?>

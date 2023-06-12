@@ -208,18 +208,35 @@ get_template_part('template-parts/roundbtn', 'rfid');
     <div class="containers">
       <h2 class="taC"><span class="title__type01"><small>小林クリエイトのノウハウ・知見をご紹介</small><br>RFID導入前のお役立ち資料</span></h2>
       <div class="flex jcC">
+
         <a href="<?php echo esc_url(home_url('/')); ?>useful/rfid_before_introduction_checksheet/" class="card">
           <div class="card__ttl bound-anim"><span>RFID導入を検討するなら<br class="sp-only">まずは読んでおきたい</span></div>
-          <figure class="card__img"><img src="<?php echo assets_path() ?>img/mold/img-doc01.jpg" alt=""></figure>
+          <figure class="card__img"><img src="<?php echo assets_path() ?>img/mold/img-doc01.jpg" alt="失敗しないためのRFID導入前チェックシート"></figure>
           <div class="card__txt">本書では、RFIDの特長を活かし、導入効果を最大限引き出すために事前に確認すべきポイントをチェックシート形式でご紹介します。</div>
           <div class="card__btn"><span>詳細はこちら</span></div>
         </a>
+
         <a href="<?php echo esc_url(home_url('/')); ?>useful/3min_rfid_selection_method/" class="card">
           <div class="card__ttl bound-anim"><span>環境や材質に最適な<br class="sp-only">RFタグ・ラベルがわかる！</span></div>
-          <figure class="card__img"><img src="<?php echo assets_path() ?>img/mold/img-doc02.jpg" alt=""></figure>
+          <figure class="card__img"><img src="<?php echo assets_path() ?>img/mold/img-doc02.jpg" alt="3分でわかる！RFタグ・ラベル選定方法"></figure>
           <div class="card__txt">本書では、使用環境や対象物の材質など、よくあるケース別で適切なRFタグ・ラベルの選定方法をご紹介します。</div>
           <div class="card__btn"><span>詳細はこちら</span></div>
         </a>
+
+        <a href="<?php echo esc_url(home_url('/')); ?>useful/rfid_manufacturing_site_improvement/" class="card">
+          <div class="card__ttl bound-anim"><span>RFIDを用いた現場改善の<br class="sp-only">方法が3分でわかる！</span></div>
+          <figure class="card__img"><img src="<?php echo assets_path() ?>img/mold/img-doc03.jpg" alt="RFID×製造現場改善ネタ集"></figure>
+          <div class="card__txt">本書では、工数低減や作業ミスを防止するための、RFIDを活用した5つの製造現場改善アイデアをご紹介します。</div>
+          <div class="card__btn"><span>詳細はこちら</span></div>
+        </a>
+
+        <a href="<?php echo esc_url(home_url('/')); ?>useful/production_system/" class="card">
+          <div class="card__ttl bound-anim"><span>SCM改善活動企業様向けの<br class="sp-only">アイデア集</span></div>
+          <figure class="card__img"><img src="<?php echo assets_path() ?>img/mold/img-doc04.jpg" alt="音声認識/RFIDを活用した現場改善事例"></figure>
+          <div class="card__txt">本書では、RFID・音声認識技術を用いた業務効率化の事例と改善策を部品購入～品質チェックまでの作業別でご紹介します。</div>
+          <div class="card__btn"><span>詳細はこちら</span></div>
+        </a>
+
       </div>
     </div>
   </section>

@@ -71,7 +71,7 @@ if ($categories) : ?>
       <?php
       $paged = get_query_var('paged') ? get_query_var('paged') : 1;
       $args = array(
-        'posts_per_page'   => 10,
+        'posts_per_page'   => 15,
         'post_type'    => 'useful',
         'paged' => $paged,
         'meta_query'    => array(
@@ -84,7 +84,7 @@ if ($categories) : ?>
       );
       $the_query = new WP_Query($args);
       if ($the_query->have_posts()) : ?>
-        <div class="wp-container">
+        <div class="wp-container flex">
           <?php while ($the_query->have_posts()) : $the_query->the_post();
 
             get_template_part('template-parts/content', 'whitepaper');
